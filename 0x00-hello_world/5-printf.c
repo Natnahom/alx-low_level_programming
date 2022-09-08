@@ -1,6 +1,8 @@
 #include <stdio.h>
-/*
-*main - main block
+/**
+*main - using main function
+*
+*Description: prints a string
 *Return: 0
 */
 int main(void)
