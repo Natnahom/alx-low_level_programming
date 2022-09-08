@@ -1,8 +1,10 @@
 #include <stdio.h>
-
-int main(){
-
-    printf("with proper grammer, but the outcome is a pieceof art,\n");
-    
-    return 0;
+/*
+*main - main block
+*Return: 0
+*/
+int main(void)
+{
+printf("with proper grammer, but the outcome is a piece of art,");
+return (0);
 }
