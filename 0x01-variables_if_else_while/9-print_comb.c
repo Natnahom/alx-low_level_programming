@@ -18,10 +18,11 @@ if (i <= 48)
 {
 continue;
 }
-putchar(' ');
 putchar(j);
+putchar(' ');
 }
 putchar(i);
 }
+putchar('\n');
 return (0);
 }

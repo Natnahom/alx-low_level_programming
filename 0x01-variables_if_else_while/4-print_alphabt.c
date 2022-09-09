@@ -22,9 +22,6 @@ continue;
 }
 putchar(ch);
 }
-for (CH = 'A'; CH <= 'Z'; CH++)
-{
-putchar(CH);
-}
+putchar('\n');
 return (0);
 }
