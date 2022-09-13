@@ -19,6 +19,6 @@ j = 1;
 	printf("%lu", k);
 	printf(", ");
 	}
-	printf("\n", k);
+	printf("\n");
 return (0);
 }
