@@ -14,12 +14,6 @@ int main(void)
 	for (n = 0; n < 1028; n++)
 	{
 	if (n % 3 == 0 || n % 5 == 0)
-	{
-	n += n;
-	}
-	else
-	continue;
-	}
-	sum = n + n;
+	sum += n;
 	printf("%d\n", sum);
 }
