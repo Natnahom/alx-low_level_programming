@@ -10,8 +10,8 @@ int alp;
 
 for (alp = 97; alp < 123; alp++)
 {
-putchar(alp);
+_putchar(alp);
 }
-putchar('\n');
+_putchar('\n');
 }
 
