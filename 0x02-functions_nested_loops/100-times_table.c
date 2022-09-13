@@ -34,7 +34,7 @@ if (!(n > 15 || n < 0))
 		}
 		else if (res >= 100 && j != 0)
 		{
-			_putchar((res / 10) + '0');
+			_putchar((res / 100) + '0');
 			_putchar((res / 10) % 10 + '0');
 			_putchar((res % 10) + '0');
 		}
