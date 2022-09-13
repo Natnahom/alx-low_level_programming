@@ -16,24 +16,24 @@ res = i * j;
 
 if (j != 0)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
 if (res >= 10)
 {
-putchar((res / 10) + '0');
-putchar((res % 10) + '0');
+_putchar((res / 10) + '0');
+_putchar((res % 10) + '0');
 }
 else if (res < 10 && j != 0)
 {
-putchar(' ');
-putchar((res / 10) + '0');
+_putchar(' ');
+_putchar((res / 10) + '0');
 }
 else
 {
-putchar((res / 10) + '0');
+_putchar((res / 10) + '0');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 }
