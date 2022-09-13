@@ -7,23 +7,14 @@
 */
 int main(void)
 {
-int sym = 95;
-int p = 112;
-int u = 117;
-int t = 116;
-int c = 99;
-int h = 104;
-int a = 97;
-int r = 114;
-
-putchar (sym);
-putchar (p);
-putchar (u);
-putchar (t);
-putchar (c);
-putchar (h);
-putchar (a);
-putchar (r);
-putchar('\n');
+_putchar ("_");
+_putchar ("p");
+_putchar ("u");
+_putchar ("t");
+_putchar ("c");
+_putchar ("h");
+_putchar ("a");
+_putchar ("r");
+_putchar('\n');
 return (0);
 }
