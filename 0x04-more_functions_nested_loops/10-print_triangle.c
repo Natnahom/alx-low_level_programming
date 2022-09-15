@@ -1,28 +1,26 @@
 #include "main.h"
 /**
  * print_triangle - draws a triangle using multiple terminal lines and #'s.
- * @n: the height of the triangle.
+ * @size: the height of the triangle.
  */
-void print_triangle(int n)
+void print_triangle(int size)
 {
 	int i, j;
 
-	if (n > 0)
+	if (size > 0)
 	{
-	for (i = 1; i <= n; i++)
-	{
-		for (j = n; j >= 1; j--)
+		for (i = 1; i <= size; i++)
 		{
-			if (i < j)
-				putchar(' ');
-			else
+			for (j = size; j >= 1; j--)
 			{
-				putchar('#');
+				if (i < j)
+					_putchar(' ');
+				else
+					_putchar('#');
 			}
+			_putchar('\n');
 		}
-		putchar('\n');
-	}
 	}
 	else
-		putchar('\n');
+		_putchar('\n');
 }
