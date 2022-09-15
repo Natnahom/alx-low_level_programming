@@ -2,7 +2,6 @@
 /**
 *print_diagonal - prints \ diagonally
 *@n: character
-*Return: nothing
 */
 void print_diagonal(int n)
 {
@@ -23,7 +22,9 @@ void print_diagonal(int n)
 			}
 		}
 	}
-}
-		else
-		putchar('\n');
+	}
+	else
+	{
+	putchar('\n');
+	}
 }
