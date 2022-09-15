@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - check the code
- * @size: intitial
+ * @n: intitial
  */
 void print_square(int n)
 {
