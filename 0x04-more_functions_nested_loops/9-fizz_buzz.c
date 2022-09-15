@@ -30,8 +30,8 @@ int main(void)
 			printf("%d", i);
 		}
 		if (i != 100)
-			_putchar(' ');
+			putchar(' ');
 	}
-		_putchar('\n');
+		putchar('\n');
 	return (0);
 }
