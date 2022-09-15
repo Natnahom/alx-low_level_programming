@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	long long i;
-	long long number = 612852475143;
+	long i;
+	long number = 612852475143;
 
-		for (i = 2; i < number; i++)
-		{
+	for (i = 2; i < number; i++)
+	{
 		if (number % i == 0)
 		number /= i;
 	}
