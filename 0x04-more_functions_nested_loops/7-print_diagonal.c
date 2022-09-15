@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_diagonal - prints \ diagonally
+*print_diagonal - prints diagonally
 *@n: character
 */
 void print_diagonal(int n)
@@ -13,18 +13,18 @@ void print_diagonal(int n)
 		{
 			if (i != 1)
 			{
-			putchar(' ');
+			_putchar(' ');
 			}
 			if (i == j)
 			{
-				putchar('\\');
-				putchar('\n');
+				_putchar(92);
+				_putchar('\n');
 			}
 		}
 	}
 	}
 	else
 	{
-	putchar('\n');
+	_putchar('\n');
 	}
 }
