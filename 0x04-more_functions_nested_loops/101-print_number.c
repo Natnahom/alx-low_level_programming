@@ -14,7 +14,7 @@ void print_number(int n)
 	if (res < 0)
 	{
 		res *= -1;
-		putchar('-');
+		_putchar('-');
 	}
 
 	temp = res;
@@ -30,8 +30,8 @@ void print_number(int n)
 /*Main */
 	while (expo > 1)
 	{
-		putchar((res / expo) % 10 + '0');
+		_putchar((res / expo) % 10 + '0');
 		expo /= 10;
 	}
-	putchar(res % 10 + '0');
+	_putchar(res % 10 + '0');
 }
