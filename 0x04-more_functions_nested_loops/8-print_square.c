@@ -1,18 +1,17 @@
 #include "main.h"
-
 /**
  * print_square - check the code
- *@size: intitial
- * Return: nothing.
+ * @size: intitial
  */
-
 void print_square(int size)
 {
+	int i, j;
+
 	if (size > 0)
 	{
-		for (int i = 0; i < size; i++)
+		for (i = 0; i < size; i++)
 		{
-			for (int j = 1; j < size; j++)
+			for (j = 1; j < size; j++)
 			{
 				putchar('#');
 			}
