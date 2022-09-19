@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * puts2 - prints string
  * @str: string
@@ -10,6 +11,6 @@ void puts2(char *str)
 	n = strlen(str);
 	for (i = 0; i < n; i += 2)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 	}
 }
