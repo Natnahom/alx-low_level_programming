@@ -13,7 +13,7 @@ int main(void)
 	srand(time(NULL));
 	i = (rand() % 9999 + 1);
 
-	printf("Checking code: %d\n", i);
+	printf("%c", i);
 
 	return (0);
 }
