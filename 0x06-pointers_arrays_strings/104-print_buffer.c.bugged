@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_buffer - prints a buffer
+ * print_buffer - makes a buffer
  * @b: string
- * @size: the size
+ * @size: size
  */
 void print_buffer(char *b, int size)
 {
@@ -15,20 +15,16 @@ void print_buffer(char *b, int size)
 	{
 		while (i < size)
 		{
-			//printf("%08x: ", i);
-            _putchar(i);
+			printf("%08x: ", i);
 			j = 0;
 			while (j < 10)
 			{
 				if (j % 2 == 0 && j > 0)
-					_putchar(' ');
+					printf(" ");
 				if (j + i > size - 1)
-                {
-					_putchar(' ');
-					_putchar(' ');
-                }
+					printf("  ");
 				else
-					_putchar(b[j + i]);
+					printf("%.2x", b[j + i]);
 				j++;
 			}
 			_putchar(' ');
