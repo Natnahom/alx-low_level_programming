@@ -9,6 +9,10 @@ char *cap_string(char *a)
 	int i, j;
 	char sep[] = " \t\n,;.!?\"(){}";
 
+	if (a[0] >= 'a' && a[0] <= 'z')
+	{
+		a[0] -= ('a' - 'A');
+	}
 	for (i = 1; a[i] != '\0'; i++)
 	{
 		for (j = 0; sep[j] != '\0'; j++)
