@@ -15,18 +15,17 @@ void print_buffer(char *b, int size)
 	{
 		while (i < size)
 		{
-			//printf("%08x: ", i);
-            _putchar(i);
+			_putchar(i);
 			j = 0;
 			while (j < 10)
 			{
 				if (j % 2 == 0 && j > 0)
 					_putchar(' ');
 				if (j + i > size - 1)
-                {
+				{
 					_putchar(' ');
 					_putchar(' ');
-                }
+				}
 				else
 					_putchar(b[j + i]);
 				j++;
