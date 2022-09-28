@@ -12,6 +12,7 @@ int _length(char *s)
 		s++;
 		return (1 + _length(s));
 	}
+	return (0);
 }
 
 /**
