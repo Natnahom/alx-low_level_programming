@@ -7,7 +7,7 @@
  * @argv: argument vector
  * Return: 0 or 1
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int tot, j;
 	unsigned int i;
@@ -23,7 +23,7 @@ int main (int argc, char *argv[])
 
 	if (!*p)
 	{
-		for(j = 0; tot > 1;)
+		for (j = 0; tot > 1;)
 		{
 			for (i = 0; i < sizeof(cent[i]); i++)
 			{
