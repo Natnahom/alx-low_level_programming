@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int wordcounter(char *str, int pos, char firstchar);
 /**
  * strtow - check the code for ALX School students.
  * @str: string
