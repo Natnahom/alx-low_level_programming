@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * int_calloc - provide memory space
+ * @nmemb: integer
+ * @size: integer
+ * Return: p or Null
+ */
 int *int_calloc(int nmemb, unsigned int size)
 {
 	/* declarations */
