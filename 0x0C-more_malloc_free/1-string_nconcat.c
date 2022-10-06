@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int _strlen(char *s);
 /**
  * string_nconcat - concatenates two strings
  * @s1: string1
