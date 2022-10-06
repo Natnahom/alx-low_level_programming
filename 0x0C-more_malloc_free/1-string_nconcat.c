@@ -1,15 +1,28 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int _strlen(char *s);
 /**
- * string_nconcat - concatenates two strings
- * @s1: string1
- * @s2: string2
- * @n: integer
- * Return: s1 or Null
+ * _strlen - find length of string
+ * @s: string
+ * Return: length of string
  */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
+}
+/**
+ * string_nconcat - concatenate 2 strings, only n bytes of s2
+ * @s1: string 1
+ * @s2: string 2
+ * @n: bytes to include of s2
+ * Return: NULL if fail, else pointer to malloc memory
+ */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
@@ -34,19 +47,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	p[i] = '\0';
 
 	return (p);
-}
-
-/**
- * _strlen - find length of string
- * @s: string
- * Return: length of string
- */
-
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-		;
-	return (i);
 }
