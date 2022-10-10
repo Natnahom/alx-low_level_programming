@@ -1,19 +1,20 @@
-#include "main.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
- * init_dog - initializes
- * @dog: structure
+ * init_dog - initializes from dog
  * @d: structure
  * @name: character
  * @age: float
  * @owner: character
+ * Return: void
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d == 0)
-		return;
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	if (d)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
