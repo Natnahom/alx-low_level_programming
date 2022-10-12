@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * array_iterator: loops through the array
+ * array_iterator - loops through the array
  * @array: array
  * @size: size of the array
  * @action: function pointer
