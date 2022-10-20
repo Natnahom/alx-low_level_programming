@@ -10,10 +10,9 @@ main:
 
 	mov rdi,fmt
 	mov rsi,msg
-	mov rdi,0
+	mov rax,0
 	call printf
 
 	pop rbp
-
 	mov rax,0
 	ret
