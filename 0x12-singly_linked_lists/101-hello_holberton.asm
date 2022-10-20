@@ -5,7 +5,7 @@ section .data
 section .text
 	global main
 
-main: 
+main:
 	push rbp
 
 	mov rdi,fmt
