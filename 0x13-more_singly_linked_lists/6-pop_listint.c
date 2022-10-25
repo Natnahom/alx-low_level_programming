@@ -2,7 +2,8 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * pop_listint - deletes the list
+ * @head: lists
  *
  * Return: Always 0.
  */
