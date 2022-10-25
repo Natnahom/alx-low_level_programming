@@ -8,21 +8,14 @@
  *
  * Return: Null or address of the new element
  */
-list_t *add_nodeint_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	char *dup;
-	list_t *new, *curr;
+	listint_t *new, *current;
 
-	if (str == NULL)
-		return (NULL);
-	dup = strdup(str);
-	if (dup == NULL)
-		return (NULL);
-	new = malloc(sizeof(list_t));
+	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->str = dup;
-	new->len = strlen(str);
+	new->n = n;
 	new->next = NULL;
 
 	if (*head == NULL)
@@ -30,9 +23,9 @@ list_t *add_nodeint_end(list_t **head, const char *str)
 		*head = new;
 		return (*head);
 	}
-	curr = *head;
-	while (curr->next != NULL)
-		curr = curr->next;
-	curr->next = new;
+	current = *head;
+	while (current->next != NULL)
+		current = current->next;
+	current->next = new;
 	return (*head);
 }
