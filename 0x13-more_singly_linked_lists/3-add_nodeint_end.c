@@ -4,7 +4,7 @@
 /**
  * add_nodeint_end - adds new node at the end
  * @head: list
- * @str: string
+ * @n: integer
  *
  * Return: Null or address of the new element
  */

@@ -4,7 +4,7 @@
 /**
  * add_nodeint - adds new node
  * @head: a constant list
- * @str: character
+ * @n: integer
  *
  * Return: number of nodes
  */
