@@ -9,7 +9,7 @@
  * Return: number of nodes
  */
 
-listint_t *add_nodeint(list_t **head, const char *str)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
 
