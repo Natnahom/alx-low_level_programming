@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * pop_listint - deletes the list
@@ -10,16 +10,16 @@
 int pop_listint(listint_t **head)
 {
 	int i;
-	listint_t *curr, *temp;
+	listint_t *curr, *tmp;
 
 	if (head == NULL)
 		return;
-	temp = curr = *head;
+	tmp = curr = *head;
 	if (*head)
 	{
 		i = curr->n;
 		*head = curr->next;
-		free(temp);
+		free(tmp);
 	}
 	else
 		i = 0;
