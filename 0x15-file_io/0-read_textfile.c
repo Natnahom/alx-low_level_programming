@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * read_textfile - reads the text file
@@ -15,10 +16,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	buff = malloc(sizeof(char) * letters);
-	if (buff == -1)
+	if (buff == NULL)
 		return (0);
 	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
+	r = read(o, buff, letters);
 	w = write(STDOUT_FILENO, buff, r);
 
 	if (o == -1 || r == -1 || w == -1 || w != r)
