@@ -9,7 +9,7 @@
  *
  * Return: NULL or a pointer to the first node where the value is located.
  *
- * Description: Prints a value every time it is compared in the list, Uses the square root
+ * Description: Prints a value every time it is compared in the list
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {

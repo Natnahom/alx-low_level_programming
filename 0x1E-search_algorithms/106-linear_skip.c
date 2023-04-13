@@ -8,7 +8,7 @@
  *
  * Return: NULL or a pointer to the first node where the value is located.
  *
- * Description: Prints a value every time it is compared in the list, Uses the square root
+ * Description: Prints a value every time it is compared in the list.
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
