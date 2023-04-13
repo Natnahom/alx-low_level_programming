@@ -12,7 +12,6 @@
   *
   * Description: Prints the [sub]array being searched after each change.
   */
-
 int binary_search(int *array, size_t size, int value)
 {
 	size_t i, left, right;
